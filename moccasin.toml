@@ -1,0 +1,43 @@
+[project]
+src = "src"
+
+[networks.contracts.price_feed]
+deployer_script = "deploy_mocks.py"
+
+[networks.sepolia]
+url = "$SEPOLIA_RPC_URL"
+save_to_db = false
+default_account_name = "default2"
+chain_id = 11155111
+explorer_uri = "https://eth-sepolia.blockscout.com"
+explorer_type = "blockscout"
+
+[networks.sepolia.contracts.price_feed]
+address = "0x694AA1769357215DE4FAC081bf1f309aDC325306"
+
+
+[networks.arbitrum-sepolia]
+url = "$ARBITRUM_SEPOLIA_RPC_URL"
+save_to_db = false
+chain_id = 421614
+explorer_uri = "https://arbitrum-sepolia.blockscout.com"
+explorer_type = "blockscout"
+explorer_api_key = "$ARBITRUM_SEPOLIA_API_KEY"
+default_account_name = "default2"
+
+[networks.arbitrum-sepolia.contracts.price_feed]
+address = "0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165"
+
+[networks.anvil]
+url = "http://127.0.0.1:8545"
+default_account_name = "anvil1"
+save_to_db = true
+
+[networks.zksync-anvil]
+url = "http://127.0.0.1:8011"
+default_account_name = "anvil_zksync1"
+is_zksync = true
+save_to_db = false
+
+
+# You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html
