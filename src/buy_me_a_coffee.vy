@@ -2,7 +2,7 @@
 """
 @license MIT 
 @title Buy Me A Coffee!
-@author You!
+@author Phylax
 @notice This contract is for creating a sample funding contract
 """
 
