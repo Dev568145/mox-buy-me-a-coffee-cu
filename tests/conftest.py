@@ -23,7 +23,7 @@ def coffee(eth_usd):
 
 @pytest.fixture(scope="function") 
 def coffee_funded(coffee, account):
-    boa.env.set_balance(account.address, SEND_VALUE ** 2)
+    boa.env.set_balance(account.address, SEND_VALUE )
     with boa.env.prank(account.address):   
         coffee.fund(value=SEND_VALUE)
     return coffee
