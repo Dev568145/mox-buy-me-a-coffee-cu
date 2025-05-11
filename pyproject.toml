@@ -1,11 +1,12 @@
 [project]
 name = "moccasin_project"
 version = "0.1.0"
-description = "Add your description here"
+description = "This is a simple fund me project"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "mamushi>=0.0.4",
     "moccasin>=0.3.8",
     "pytest>=8.3.5",
+    "vyper==0.4.0",
 ]

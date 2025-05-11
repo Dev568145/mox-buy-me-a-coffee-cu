@@ -1,4 +1,4 @@
-# pragme version 0.4.0
+# pragma version 0.4.0
 # @license MIT
 
 from interfaces import AggregatorV3Interface
